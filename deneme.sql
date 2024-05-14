@@ -29,8 +29,8 @@ Ad varchar(20) not null,
 Soyad varchar(20) not null,
 TcKimlikNO char(11) primary key not null, --uniqe demedim primary key ile ayný anda olmuyor.
 DogumTarihi date not null,
-Cinsiyet bit not null, -- bunu düzenleriz.örneðini bulamadým.
-MedeniHal bit not null, -- ""
+Cinsiyet bit not null, -- 0 erkek,1 kadýn .Bunu düzenleriz.örneðini bulamadým.
+MedeniHal bit not null, -- 0 bekar,1evli.
 Tel char(10) constraint chkTEl check (Tel like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
 Mail Varchar(50) constraint chkMail check (Mail like '%@%.%')  unique not null,
 )
