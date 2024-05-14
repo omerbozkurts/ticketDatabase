@@ -17,7 +17,22 @@ Ad varchar(14) not null,
  on delete cascade on update cascade not null --referans edilen tabloda kayýt silinirse bu tabloda da silinir.
 )
 
---Bu tabloda pozisyonlar tutulur.
+--Bu tabloda pozisyonlar tutulur. geliþtirilecek
 create table tblPozisyon(
-pozisyonID varchar(20),
+pozisyonID int identity(1,1) primary key,
+PozisyonAdý varchar(20) not null 
+)
+
+--Bu tablo personel bilgilerini tutar.
+--!!!! POZÝSYON VE PERSONEL ARASINDA "ÇALIÞIR" ÝLÝÞKÝSÝ VAR VE BUNA AÝT BAÞLAMA VE BÝTÝÞ TARÝHÝ DÝYE 2 ÖZELLÝK VAR.
+--çalýþýr diye table mý oluþturalým.bu iliþki m-n iliþkisi. yoksa personele mi ekleyelim bu iki özelliði????
+create table tblPersonel(
+Ad varchar(20) not null,
+Soyad varchar(20) not null,
+TcKimlikNO char(11) primary key not null, --uniqe demedim primary key ile ayný anda olmuyor.
+DogumTarihi date not null,
+Cinsiyet bit not null, -- bunu düzenleriz.örneðini bulamadým.
+MedeniHal bit not null, -- ""
+Tel char(10) constraint chkTEl check (Tel like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
+Mail Varchar(50) constraint chkMail check (Mail like '%@%.%')  unique not null,
 )
