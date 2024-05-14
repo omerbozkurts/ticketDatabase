@@ -25,12 +25,13 @@ PozisyonAdi varchar(20) not null
 
 --Bu tablo personel bilgilerini tutar.
 create table tblPersonel(
+ID int identity (1,1) primary key,
 Ad varchar(20) not null,
 Soyad varchar(20) not null,
-TcKimlikNO char(11) primary key not null, --uniqe demedim primary key ile ayný anda olmuyor.
+TcKimlikNO char(11) unique not null,
 DogumTarihi date not null,
-Cinsiyet bit not null, -- 0 erkek,1 kadýn .Bunu düzenleriz.örneðini bulamadým.
-MedeniHal bit not null, -- 0 bekar,1evli.
+Cinsiyet bit not null, -- 0: erkek,1: kadin .Bunu düzenleriz.örneðini bulamadým.
+MedeniHal bit not null, -- 0: bekar,1: evli.
 Tel char(10) constraint chkTEl check (Tel like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
 Mail Varchar(50) constraint chkMail check (Mail like '%@%.%')  unique not null,
 )
@@ -39,6 +40,10 @@ Mail Varchar(50) constraint chkMail check (Mail like '%@%.%')  unique not null,
 --Bu iliþki m-n iliþkisi. PDF te kitap ve okuma listesi arasýnda da m-n iliþkisi ve ona ait özellikler için yeni tablo oluþturuluyor.
 create table calisirPersonelPozisyon(
 ID int identity (1,1) primary key,
---TcKimlikNO char foreign key references tblPersonel (TcKimlikNO), 
+--PersonelTCNO int foreign key references tblPersonel (TcKimlikNO), !böyle olduðunda hata veriyor çünkü tcKimlikNO char, bu tablonun primary key i int.Bu yüzden personele ID ekliyorum.
+PersonelID int foreign key references tblPersonel(ID) not null,
+PozisyonID int foreign key references tblPozisyon(pozisyonID) not null,
+BaslamaTarihi date not null,
+AyrilmaTarihi date default null --deðer belirtilmediði sürece sabit null deðerini alýr. 
 )
 
