@@ -13,7 +13,11 @@ Ad varchar(14) not null,
  ilceID int identity(1,1) primary key, --identity 1 den baþlayýp 1 arttýrarak ilçelere ID verir.Sadece int deðiþkeninde kullanýlýr.
  --Türkiyedeki en uzun ilçe 16 harf.
  Ad varchar(16) not null,
- --bu kodlarý anlamadým.þimdilik yazýyorum.
- --ilID char(2) foreign key references tblIl(ilID)
- -- on delete cascade on update cascade notnull
+ ilID char(2) foreign key references tblIl(ilID) 
+ on delete cascade on update cascade not null --referans edilen tabloda kayýt silinirse bu tabloda da silinir.
+)
+
+--Bu tabloda pozisyonlar tutulur.
+create table tblPozisyon(
+pozisyonID varchar(20),
 )
