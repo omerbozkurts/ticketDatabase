@@ -43,7 +43,26 @@ ID int identity (1,1) primary key,
 --PersonelTCNO int foreign key references tblPersonel (TcKimlikNO), !böyle olduðunda hata veriyor çünkü tcKimlikNO char, bu tablonun primary key i int.Bu yüzden personele ID ekliyorum.
 PersonelID int foreign key references tblPersonel(ID) not null,
 PozisyonID int foreign key references tblPozisyon(pozisyonID) not null,
-BaslamaTarihi date not null,
+BaslamaTarihi date default getdate() not null,
 AyrilmaTarihi date default null --deðer belirtilmediði sürece sabit null deðerini alýr. 
+)
+
+-- Personel - Sefer arasýndaki n'e m iliþki için oluþturulan tablo.
+create table seferPersonel(
+PersonelID int foreign key references tblPersonel (ID) not null,
+--SeferID int foreign key references tblSefer(ID) not null, þimdilik sefer tablosu yok
+--constraint pkttblseferPersonel primary key (PersonelID,SeferID)
+)
+
+-- Personel - Bilet arasýnda 1'e n iliþkisi var. Ýliþkilerdeki özellik n tarafýndaki varlýða sütun eklenir. 
+--BU tablo bilet bilgilerini tutar.
+create table tblBilet(
+ID int identity(1,1) primary key,
+Ucret money not null,
+KesilmeTarihi date default getdate(), -- alýndýðý tarih getilir.
+KoltukNO int unique not null,
+CheckinDurumu smallint default 0 not null, --1 olduðunda checkin yapýlmýþ. örnekteki üye tablosu aktif mi kýsmýndan kopya çektim.
+CheckinTarihSaati datetime default null, --yapýlmadýðý sürece 0 kabul edilir.?? emin deðilim
+PersonelIDbiletKeser int foreign key references tblPersonel(ID) not null
 )
 
