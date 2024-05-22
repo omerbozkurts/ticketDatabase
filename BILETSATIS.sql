@@ -7,19 +7,19 @@ IF DB_ID('BILETSATIS') IS NOT NULL
 GO
 
 CREATE DATABASE BILETSATIS
-	ON PRIMARY (	
-			NAME = 'BILETSATISDB',	
-			FILENAME = 'D:\database\biletsatis_db.mdf', 
-			SIZE = 50MB, 
-			MAXSIZE = 1000MB, 
-			FILEGROWTH=30MB
-				) 
-	LOG ON (
-		NAME = 'BILETSATISLOG', 
-		FILENAME= 'D:\database\biletsatis_log.ldf', 
-		SIZE= 10MB, 
-		MAXSIZE= 100MB, 
-		FILEGROWTH = 20MB) 
+	--ON PRIMARY (	
+	--		NAME = 'BILETSATISDB',	
+	--		FILENAME = 'D:\database\biletsatis_db.mdf', 
+	--		SIZE = 50MB, 
+	--		MAXSIZE = 1000MB, 
+	--		FILEGROWTH=30MB
+	--			) 
+	--LOG ON (
+	--	NAME = 'BILETSATISLOG', 
+	--	FILENAME= 'D:\database\biletsatis_log.ldf', 
+	--	SIZE= 10MB, 
+	--	MAXSIZE= 100MB, 
+	--	FILEGROWTH = 20MB) 
 GO
 
 USE BILETSATIS

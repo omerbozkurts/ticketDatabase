@@ -15,4 +15,13 @@ VALUES
 ('tokat turhal sube','tokat','5313219802',NULL,NULL,'60',823,2),
 ('tokat artova sube','tokat','5313219803',NULL,NULL,'60',828,2),
 ('tokat tokat sube','tokat','5313219804',NULL,NULL,'60',824,2),
-('pamukkale tokat sube','tokat','5323219814',NULL,NULL,'60',824,1)
+('pamukkale tokat sube','tokat','5323219814',NULL,NULL,'60',824,1),
+('istanbul sarýyer sube','Ýstanbul','5511523151',NULL,NULL,'34',458,3),
+('istanbul sarýyer sube','Ýstanbul','5511523111',NULL,NULL,'34',458,4),
+('istanbul þiþli sube','Ýstanbul','5511523811',NULL,NULL,'34',455,3),
+('istanbul pendik sube','Ýstanbul','5511523810',NULL,NULL,'34',449,39),
+('yalova merkez sube','Yalova','5511523152',NULL,NULL,'77',971,39),
+('yalova çýnarcýk sube','Yalova','5511523177',NULL,NULL,'77',968,39),
+('yalova armutlu sube','Yalova','5511523777',NULL,NULL,'77',969,39),
+('bursa orhaneli sube','Bursa','5511523819',NULL,NULL,'16',203,39)
+
