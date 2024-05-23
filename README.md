@@ -77,5 +77,5 @@ Ayrıca her firmanın kendisine ait araçları için de aşağıdaki bilgiler si
 
 # Select Query
 
-###Geçen ay (sistem tarihine göre otomatik alınacaktır) en çok yolcu taşıyan ilk üç firmanın hepsiyle bu ay içinde en az iki kez seyahat etmiş yolcuların il bazında erkek ve kadın sayıları
-###Bu ay içinde PAMUKKALE firmasından hem Ankara-İstanbul hem de İzmir-İstanbul otobüs bileti alan yolcuların tcno, ad, soyad, tel bilgileri (dikkat : önemli olan güzergah başlangıç-bitiş noktaları değil biletin başlangıç-bitiş noktası)
+### Geçen ay (sistem tarihine göre otomatik alınacaktır) en çok yolcu taşıyan ilk üç firmanın hepsiyle bu ay içinde en az iki kez seyahat etmiş yolcuların il bazında erkek ve kadın sayıları
+### Bu ay içinde PAMUKKALE firmasından hem Ankara-İstanbul hem de İzmir-İstanbul otobüs bileti alan yolcuların tcno, ad, soyad, tel bilgileri (dikkat : önemli olan güzergah başlangıç-bitiş noktaları değil biletin başlangıç-bitiş noktası)
