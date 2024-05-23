@@ -23,5 +23,13 @@ VALUES
 ('yalova merkez sube','Yalova','5511523152',NULL,NULL,'77',971,39),
 ('yalova çýnarcýk sube','Yalova','5511523177',NULL,NULL,'77',968,39),
 ('yalova armutlu sube','Yalova','5511523777',NULL,NULL,'77',969,39),
-('bursa orhaneli sube','Bursa','5511523819',NULL,NULL,'16',203,39)
-
+('bursa orhaneli sube','Bursa','5511523819',NULL,NULL,'16',203,39),
+('samsun merkez sube','Samsun','5415538701','5415538702','5415538703','55',766,11),
+('samsun çarþamba sube','Samsun','5415538704',NULL,NULL,'55',770,6),
+('samsun salýpazarý sube','Samsun','5415538705',NULL,NULL,'55',761,9),
+('istanbul sarýyer sube','Ýstanbul','5555555555',NULL,NULL,'34',458,40),
+('pamukkale merkez sube','Denizli','5555555554',NULL,NULL,'20',262,40),
+('tokat turhal sube','tokat','5555555553',NULL,NULL,'60',823,40),
+('samsun merkez sube','Samsun','5555555552','5555555551',NULL,'55',766,40),
+('adana seyhan sube','Adana','5555555550',NULL,NULL,'01',15,40),
+('trabzon merkez sube','Trabzon','5555555500',NULL,NULL,'61',840,40),

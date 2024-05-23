@@ -40,4 +40,5 @@ VALUES --TELNO2 ve TELNO3 degerleri istege bagli olarak verilebilmektedir
 ('Batý Yýldýzý', 'www.batiyildizi.com.tr', 'Ýzmir Foça', '2019-05-30', '2323284545', NULL, NULL, '35', 494),
 ('Kuzey Fýrtýnasý', 'www.kuzeyfirtinasi.com.tr', 'Rize Merkez', '2007-01-15', '4642239090', NULL, NULL, '53', 730),
 ('Karadeniz Gemi', 'www.karadenizgemi.com.tr', 'Giresun Merkez', '2015-06-18', '4543239090', NULL, NULL, '28', 372),
-('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971)
+('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971),
+('Türk Hava Yollarý','www.turkhavayollari.com.tr','Ýstanbul merkez','1933-05-20','8503330849',NULL,NULL,'34',449)
