@@ -2,7 +2,7 @@ USE BILETSATIS
 --baþalngýç ve bitiþ tarihinde hata veriyor execute etmiyor. personel-pozisyon iliþkisini kodda düzelt.
 
 INSERT INTO PERSONEL
-(TCNo, Ad, Soyad, DOGUMTARIHI, CINSIYET, MEDENIHAL, TelefonNo, EPosta,BaslangicTarih, AyrilmaTarih, DogumIl, DogumIlce, POZSIYON, FIRMA, Sube)
+(TCNo, Ad, Soyad, DogumTarihi, Cinsiyet, MedeniHal, TelefonNo, EPosta, BaslangicTarih, AyrilmaTarih, DogumIl, DogumIlce, Pozisyon, Firma, Sube)
 VALUES
 ('12345678910','Ali','Yýlmaz','1984-12-11','E','B','5432123132','aliyilmaz@posta.com','2021-12-03',NULL,'34',443,1,1,6),
 ('12345678914','Veli','Durmaz','1981-11-10','E','E','5432183132','velidurmaz@posta.com','2023-01-13',NULL,'34',449,2,2,8),
