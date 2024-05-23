@@ -116,7 +116,7 @@ GO
 												   CONSTRAINT uniqueYolcuPosta UNIQUE
 												   CONSTRAINT notNullYolcuPosta NOT NULL,
 		Aktiflik SMALLINT DEFAULT 1 NOT NULL, -- aktifligin sonlanmasi durumunda deger 0 olarak degistirilir
-		YAS AS DATEDIFF(YY,DogumTarihi,GETDATE()),
+		Yas AS DATEDIFF(YY,DogumTarihi,GETDATE()),
 		Sifre VARCHAR(30) CONSTRAINT checkSifre CHECK( LEN(Sifre)>=8 AND 
 														Sifre LIKE '%[0-9]%' AND
 														Sifre COLLATE Latin1_General_BIN LIKE '%[A-Z]%' AND 
@@ -236,7 +236,7 @@ GO
 		KalkisDurak INT FOREIGN KEY REFERENCES DURAKLAR(DurakId)
 									CONSTRAINT notNullSeferKalkis NOT NULL,
 		KalkisSaat TIME NOT NULL,
-		VarisDurak INT FOREIGN KEY REFERENCES DURAKLAR(DURAKID)
+		VarisDurak INT FOREIGN KEY REFERENCES DURAKLAR(DurakId)
 								   CONSTRAINT notNullSeferVaris NOT NULL,
 		VarisSaat TIME NOT NULL,
 		Arac INT FOREIGN KEY REFERENCES FIRMA_ARAC(FirmaAracId)

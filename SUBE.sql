@@ -1,7 +1,7 @@
 USE BILETSATIS
 
 INSERT INTO SUBE 
-(SUBEAD,SUBEADRES,TELNO,TELNO2,TELNO3,SUBEIL,SUBEILCE,SUBEFIRMA)
+(SubeAd, SubeAdres, TelNo, TelNo2, TelNo3, SubeIl, SubeIlce, SubeFirma)
 VALUES
 ('pamukkale pamukkale sube','Denizli','5323219803',NULL,NULL,'20',253,1),
 ('pamukkale bozkurt sube','Denizli','5323217804',NULL,NULL,'20',250,1),

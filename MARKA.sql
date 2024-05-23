@@ -1,7 +1,7 @@
 USE BILETSATIS
 
 INSERT INTO MARKA 
-(MARKAAD,ARACTURID)
+(MarkaAd,AracTurId)
 VALUES
 ('mercedes',1),
 ('setra',1),

@@ -1,7 +1,7 @@
 USE BILETSATIS
 
 INSERT INTO YOLCU
-(TCNO,AD,SOYAD,CINSIYET,DOGUMTARIHI,TELEFONNO,EPOSTA,AKTIFLIK,SIFRE)
+(TCNo, Ad, Soyad, Cinsiyet, DogumTarihi, TelefonNo, EPosta, Aktiflik, Sifre)
 VALUES
 ('12345678910','mehmet', 'duran','E','1978-12-12','5432167819','mehmetduran@mail.com',1,'Aa1asdfas'),
 ('12345878910','hasan', 'cam','E','1992-01-06','5432167810','hasancam@mail.com',1,'Aa1asdfas'),
