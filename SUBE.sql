@@ -15,8 +15,8 @@ VALUES
 ('tokat turhal sube','tokat','5313219802',NULL,NULL,'60',823,3),
 ('tokat artova sube','tokat','5313219803',NULL,NULL,'60',828,3),
 ('tokat tokat sube','tokat','5313219804',NULL,NULL,'60',824,3),
-('pamukkale tokat sube','tokat','5323219814',NULL,NULL,'60',824,2),
 ('istanbul sarýyer sube','Ýstanbul','5511523151',NULL,NULL,'34',458,4),
+('istanbul çatalca sube','Ýstanbul','5511523111',NULL,NULL,'34',467,4),
 ('istanbul sarýyer sube','Ýstanbul','5511523111',NULL,NULL,'34',458,5),
 ('istanbul þiþli sube','Ýstanbul','5511523811',NULL,NULL,'34',455,4),
 ('istanbul pendik sube','Ýstanbul','5511523810',NULL,NULL,'34',449,1),
@@ -33,3 +33,4 @@ VALUES
 ('samsun merkez sube','Samsun','5555555552','5555555551',NULL,'55',766,34),
 ('adana seyhan sube','Adana','5555555550',NULL,NULL,'01',15,34),
 ('trabzon merkez sube','Trabzon','5555555500',NULL,NULL,'61',840,34),
+('samsun bafra sube','Samsun','5555555552','5555555551',NULL,'55',771,8)

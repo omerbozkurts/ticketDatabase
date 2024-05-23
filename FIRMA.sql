@@ -1,9 +1,8 @@
 ﻿USE BILETSATIS
-INSERT INTO FIRMA 
-(FirmaAd, WebAdresi, FirmaAdres, KurulusTarih, TelNo, TelNo2, TelNo3, FirmaIlKodu,FirmaIlceKodu) 
-VALUES --TELNO2 ve TELNO3 degerleri istege bagli olarak verilebilmektedir
+INSERT INTO FIRMA (FirmaAd, WebAdresi, FirmaAdres, KurulusTarih, TelNo, TelNo2, TelNo3, FirmaIlKodu, FirmaIlceKodu)
+VALUES
 --otobüs
-('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971)
+('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971),
 ('Pamukkale Seyehat','www.pamukkale.com','pamukkale merkez','2014-03-02','5431231010',NULL,NULL,'20',253), 
 ('Tokat Seyehat','www.tokatseyehat.com','tokat zile','2011-09-12','5431241918',NULL,NULL,'60',822),
 ('Metro Turizm', 'www.metroturizm.com.tr', 'Ýstanbul Kadýköy', '2003-05-12', '4440344897', NULL, NULL, '34',460),

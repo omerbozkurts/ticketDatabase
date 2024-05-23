@@ -1,3 +1,4 @@
+use BILETSATIS
 INSERT INTO IL VALUES
 ('01', N'Adana'),
 ('02', N'Adýyaman'),
