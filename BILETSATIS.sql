@@ -287,8 +287,7 @@ GO
 		BiletKesen INT FOREIGN KEY REFERENCES PERSONEL(PersonelId)
 								   CONSTRAINT notNullBiletKesen NOT NULL,
 		Yolcu INT FOREIGN KEY REFERENCES YOLCU(YolcuId)
-							  CONSTRAINT notNullBiletYolcu NOT NULL
-							  CONSTRAINT chkUniqueBiletYolcu UNIQUE,
+							  CONSTRAINT notNullBiletYolcu NOT NULL,
 		Guzergah INT FOREIGN KEY REFERENCES GUZERGAH(GuzergahId)
 							     CONSTRAINT chkNullBiletGuzergah NOT NULL,
 		Sefer INT FOREIGN KEY REFERENCES SEFER(SeferId)
@@ -298,6 +297,7 @@ GO
 		InisDurak INT FOREIGN KEY REFERENCES UGRANILAN_DURAK_SEFER(UgranilanDurakId)
 								  CONSTRAINT notNullBiletInis NOT NULL,
 		Arac INT FOREIGN KEY REFERENCES FIRMA_ARAC(FirmaAracId)
-								  CONSTRAINT notNullBiletArac NOT NULL
+								  CONSTRAINT notNullBiletArac NOT NULL,
+		CONSTRAINT chkBiletUnique UNIQUE (KoltukNo, Firma, Sefer, Arac)
 
 	)
