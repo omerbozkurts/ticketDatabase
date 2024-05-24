@@ -2,40 +2,37 @@ USE BILETSATIS
 
 INSERT INTO YOLCU (TCNo, Ad, Soyad, Cinsiyet, DogumTarihi, TelefonNo, EPosta, Aktiflik, Sifre)
 VALUES
---('12345678910','mehmet', 'duran','E','1978-12-12','5432167819','mehmetduran@mail.com',1,'Aa1asdfas1'),
---('98765432109','hasan', 'cam','E','1992-01-06','5432167810','hasancam@mail.com',1,'Bb2bcdefg2'),
---('12398745602','ayse', 'gormez','K','1963-08-27','5432167019','aysegormez@mail.com',1,'Cc3cdefgh3'),
---('09876543210','buse','toprak','K','1999-06-13','5432167619','busetoprak@mail.com',1,'Dd4defghi4'),
---('23456789012','ali', 'kara','E','1985-11-05','5432167910','alikara@mail.com',1,'Ee5efghij5'),
---('87654321098','fatma', 'yildiz','K','1971-03-22','5432167310','fatmayildiz@mail.com',1,'Ff6fghijk6'),
---('22222222222','kemal', 'gunes','E','1980-07-18','5432167811','kemalgunes@mail.com',1,'Gg7ghijkl7'),
---('76543210987','aylin', 'deniz','K','1995-09-15','5432167011','aylindeniz@mail.com',1,'Hh8hijklm8'),
---('45678901234','tugba', 'orman','K','1988-05-20','5432167611','tugbaorman@mail.com',1,'Ii9ijklmn9'),
---('65432109876','emre', 'yilmaz','E','1990-10-30','5432167911','emreyilmaz@mail.com',1,'Jj0jklmno0')
---('56789012345','serkan', 'gul','E','1976-02-25','5432167210','serkangul@mail.com',1,'Kk1klmnop1'),
---('54321098765','esra', 'sahin','K','1983-04-12','5432167812','esrasahin@mail.com',1,'Ll2lmnopq2'),
---('67890123456','murat', 'ozdemir','E','1989-08-14','5432167012','muratozdemir@mail.com',1,'Mm3mnopqr3'),
---('43210987654','canan', 'cetin','K','1991-01-01','5432167612','canancetin@mail.com',1,'Nn4nopqrs4'),
---('78901234567','oguz', 'aydýn','E','1982-06-09','5432167912','oguzaydin@mail.com',1,'Oo5opqrst5'),
---('32109876543','selin', 'yasar','K','1977-12-23','5432167211','selinyasar@mail.com',1,'Pp6pqrstu6'),
---('89012345678','mehmet', 'bozkurt','E','1994-03-11','5432167813','mehmetbozkurt@mail.com',1,'Qq7qrstuv7'),
---('21098765432','bahar', 'polat','K','1986-07-30','5432167013','baharpolat@mail.com',1,'Rr8rstuvw8'),
---('90123456789','kerem', 'bal','E','1981-11-28','5432167613','kerembal@mail.com',1,'Ss9stuvwx9'),
---('10987654321','sibel', 'ay','K','1984-02-19','5432167913','sibelay@mail.com',1,'Tt0tuvwxy0'),
---('01234567891','yusuf', 'ciftci','E','1987-09-09','5432167212','yusufciftci@mail.com',1,'Uu1uvwxyz1'),
---('09876543211','gizem', 'duman','K','1993-12-01','5432167814','gizemduman@mail.com',1,'Vv2vwxyza2'),
---('23456789013','baran', 'gunduz','E','1990-05-04','5432167014','barangunduz@mail.com',1,'Ww3wxyzab3'),
---('87654321099','nazan', 'kara','K','1979-06-16','5432167614','nazankara@mail.com',1,'Xx4xyzabc4'),
---('34567890124','halil', 'isik','E','1984-08-29','5432167914','halilisik@mail.com',1,'Yy5yzabcd5'),
---('76543210988','elif', 'turan','K','1992-10-11','5432167213','elifturan@mail.com',1,'Zz6zabcde6')
------('45678901235','oguzhan', 'keskin','E','1985-01-25','5432167815','oguzhankeskin@mail.com',1,'Aa7abcdef7')
------('65432109877','aysun', 'usta','K','1980-11-03','5432167015','aysunusta@mail.com',1,'Bb8bcdefg8')
------('56789012346','kamil', 'serdar','E','1975-07-08','5432167615','kamilserdar@mail.com',1,'Cc9cdefgh9')
+('12345678910','mehmet', 'duran','E','1978-12-12','5432167819','mehmetduran@mail.com',1,'Aa1asdfas1'),
+('98765432109','hasan', 'cam','E','1992-01-06','5432167810','hasancam@mail.com',1,'Bb2bcdefg2'),
+('12398745602','ayse', 'gormez','K','1963-08-27','5432167019','aysegormez@mail.com',1,'Cc3cdefgh3'),
+('09876543210','buse','toprak','K','1999-06-13','5432167619','busetoprak@mail.com',1,'Dd4defghi4'),
+('23456789012','ali', 'kara','E','1985-11-05','5432167910','alikara@mail.com',1,'Ee5efghij5'),
+('87654321098','fatma', 'yildiz','K','1971-03-22','5432167310','fatmayildiz@mail.com',1,'Ff6fghijk6'),
+('22222222222','kemal', 'gunes','E','1980-07-18','5432167811','kemalgunes@mail.com',1,'Gg7ghijkl7'),
+('76543210987','aylin', 'deniz','K','1995-09-15','5432167011','aylindeniz@mail.com',1,'Hh8hijklm8'),
+('45678901234','tugba', 'orman','K','1988-05-20','5432167611','tugbaorman@mail.com',1,'Ii9ijklmn9'),
+('65432109876','emre', 'yilmaz','E','1990-10-30','5432167911','emreyilmaz@mail.com',1,'Jj0jklmno0')
+('56789012345','serkan', 'gul','E','1976-02-25','5432167210','serkangul@mail.com',1,'Kk1klmnop1'),
+('54321098765','esra', 'sahin','K','1983-04-12','5432167812','esrasahin@mail.com',1,'Ll2lmnopq2'),
+('67890123456','murat', 'ozdemir','E','1989-08-14','5432167012','muratozdemir@mail.com',1,'Mm3mnopqr3'),
+('43210987654','canan', 'cetin','K','1991-01-01','5432167612','canancetin@mail.com',1,'Nn4nopqrs4'),
+('78901234567','oguz', 'aydýn','E','1982-06-09','5432167912','oguzaydin@mail.com',1,'Oo5opqrst5'),
+('32109876543','selin', 'yasar','K','1977-12-23','5432167211','selinyasar@mail.com',1,'Pp6pqrstu6'),
+('89012345678','mehmet', 'bozkurt','E','1994-03-11','5432167813','mehmetbozkurt@mail.com',1,'Qq7qrstuv7'),
+('21098765432','bahar', 'polat','K','1986-07-30','5432167013','baharpolat@mail.com',1,'Rr8rstuvw8'),
+('90123456789','kerem', 'bal','E','1981-11-28','5432167613','kerembal@mail.com',1,'Ss9stuvwx9'),
+('10987654321','sibel', 'ay','K','1984-02-19','5432167913','sibelay@mail.com',1,'Tt0tuvwxy0'),
+('01234567891','yusuf', 'ciftci','E','1987-09-09','5432167212','yusufciftci@mail.com',1,'Uu1uvwxyz1'),
+('09876543211','gizem', 'duman','K','1993-12-01','5432167814','gizemduman@mail.com',1,'Vv2vwxyza2'),
+('23456789013','baran', 'gunduz','E','1990-05-04','5432167014','barangunduz@mail.com',1,'Ww3wxyzab3'),
+('87654321099','nazan', 'kara','K','1979-06-16','5432167614','nazankara@mail.com',1,'Xx4xyzabc4'),
+('34567890124','halil', 'isik','E','1984-08-29','5432167914','halilisik@mail.com',1,'Yy5yzabcd5'),
+('76543210988','elif', 'turan','K','1992-10-11','5432167213','elifturan@mail.com',1,'Zz6zabcde6')
 --('54321098666','deniz', 'acar','K','1995-04-21','5432167915','denizacar@mail.com',1,'Dd0defghi0')
 --('67890123457','burak', 'kaya','E','1983-03-06','5432167214','burakkaya@mail.com',1,'Ee1efghij1'),
 --('43210987655','aysen', 'ates','K','1989-09-18','5432167816','aysenates@mail.com',1,'Ff2fghijk2'),
 --('78901234568','ahmet', 'ozkan','E','1991-12-29','5432167016','ahmetozkan@mail.com',1,'Gg3ghijkl3'),
---('32109876544','pinar', 'demir','K','1988-08-24','5432167616','pinardemir@mail.com',1,'Hh4hijklm4')
+--('32109876544','pinar', 'demir','K','1988-08-24','5432167616','pinardemir@mail.com',1,'Hh4hijklm4') en son bunu kaydettim
 --('89012345679','kenan', 'yilmaz','E','1992-05-07','5432167916','kenanyilmaz@mail.com',1,'Ii5ijklmn5'),
 --('21098765433','serpil', 'korkmaz','K','1976-11-20','5432167215','serpilkorkmaz@mail.com',1,'Jj6jklmno6'),
 --('90123456780','emrah', 'arici','E','1986-07-25','5432167817','emraharici@mail.com',1,'Kk7klmnop7'),
