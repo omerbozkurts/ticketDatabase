@@ -1,5 +1,4 @@
 USE BILETSATIS
-
 INSERT INTO IL VALUES
 ('01', N'Adana'),
 ('02', N'Adýyaman'),
@@ -1155,7 +1154,7 @@ VALUES
 ('tokat turhal sube','tokat','5555555553',NULL,NULL,'60',823,40),
 ('samsun merkez sube','Samsun','5555555552','5555555551',NULL,'55',766,40),
 ('adana seyhan sube','Adana','5555555550',NULL,NULL,'01',15,40),
-('trabzon merkez sube','Trabzon','5555555500',NULL,NULL,'61',840,40),
+('trabzon merkez sube','Trabzon','5555555500',NULL,NULL,'61',840,40)
 
 INSERT INTO POZISYON (PozisyonAd) 
 VALUES
