@@ -1,0 +1,19 @@
+SELECT 
+  y.TCNo,
+  y.Ad,
+  y.Soyad,
+  y.TelefonNo
+FROM BILET b
+INNER JOIN YOLCU y ON b.Yolcu = y.YolcuId
+INNER JOIN FIRMA f ON b.Firma = f.FirmaId
+INNER JOIN SEFER s ON b.Sefer = s.SeferId
+INNER JOIN GUZERGAH g ON s.Guzergah = g.GuzergahId
+INNER JOIN UGRANILAN_DURAK_SEFER uds ON b.BinisDurak = uds.UgranilanDurakId
+INNER JOIN UGRANILAN_DURAK_SEFER udi ON b.InisDurak = udi.UgranilanDurakId
+WHERE 
+  f.FirmaAd = 'PAMUKKALE' AND
+  MONTH(b.KesilmeTarih) = MONTH(GETDATE()) AND
+  ((uds.DurakIsim = 'Ankara' AND udi.DurakIsim = 'İstanbul') OR
+   (uds.DurakIsim = 'İzmir' AND udi.DurakIsim = 'İstanbul'))
+ORDER BY
+  y.Soyad;
