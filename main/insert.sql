@@ -1121,7 +1121,8 @@ VALUES
 ('Batý Yýldýzý', 'www.batiyildizi.com.tr', 'Ýzmir Foça', '2019-05-30', '2323284545', NULL, NULL, '35', 494),
 ('Kuzey Fýrtýnasý', 'www.kuzeyfirtinasi.com.tr', 'Rize Merkez', '2007-01-15', '4642239090', NULL, NULL, '53', 730),
 ('Karadeniz Gemi', 'www.karadenizgemi.com.tr', 'Giresun Merkez', '2015-06-18', '4543239090', NULL, NULL, '28', 372),
-('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971)
+('Yalova Seyahat','www.yalovaseyahat.com.tr','Yalova Merkez','2008-08-07','2161514777',NULL, NULL,'77',971),
+('Türk Hava Yollarý','www.turkhavayollari.com.tr','Ýstanbul merkez','1933-05-20','8503330849',NULL,NULL,'34',449)
 
 INSERT INTO SUBE (SubeAd, SubeAdres, TelNo, TelNo2, TelNo3, SubeIl, SubeIlce, SubeFirma)
 VALUES
@@ -1145,7 +1146,16 @@ VALUES
 ('yalova merkez sube','Yalova','5511523152',NULL,NULL,'77',971,39),
 ('yalova çýnarcýk sube','Yalova','5511523177',NULL,NULL,'77',968,39),
 ('yalova armutlu sube','Yalova','5511523777',NULL,NULL,'77',969,39),
-('bursa orhaneli sube','Bursa','5511523819',NULL,NULL,'16',203,39)
+('bursa orhaneli sube','Bursa','5511523819',NULL,NULL,'16',203,39),
+('samsun merkez sube','Samsun','5415538701','5415538702','5415538703','55',766,11),
+('samsun çarþamba sube','Samsun','5415538704',NULL,NULL,'55',770,6),
+('samsun salýpazarý sube','Samsun','5415538705',NULL,NULL,'55',761,9),
+('istanbul sarýyer sube','Ýstanbul','5555555555',NULL,NULL,'34',458,40),
+('pamukkale merkez sube','Denizli','5555555554',NULL,NULL,'20',262,40),
+('tokat turhal sube','tokat','5555555553',NULL,NULL,'60',823,40),
+('samsun merkez sube','Samsun','5555555552','5555555551',NULL,'55',766,40),
+('adana seyhan sube','Adana','5555555550',NULL,NULL,'01',15,40),
+('trabzon merkez sube','Trabzon','5555555500',NULL,NULL,'61',840,40),
 
 INSERT INTO POZISYON (PozisyonAd) 
 VALUES
