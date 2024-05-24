@@ -11,7 +11,7 @@ VALUES
 ('22222222222','kemal', 'gunes','E','1980-07-18','5432167811','kemalgunes@mail.com',1,'Gg7ghijkl7'),
 ('76543210987','aylin', 'deniz','K','1995-09-15','5432167011','aylindeniz@mail.com',1,'Hh8hijklm8'),
 ('45678901234','tugba', 'orman','K','1988-05-20','5432167611','tugbaorman@mail.com',1,'Ii9ijklmn9'),
-('65432109876','emre', 'yilmaz','E','1990-10-30','5432167911','emreyilmaz@mail.com',1,'Jj0jklmno0')
+('65432109876','emre', 'yilmaz','E','1990-10-30','5432167911','emreyilmaz@mail.com',1,'Jj0jklmno0'),
 ('56789012345','serkan', 'gul','E','1976-02-25','5432167210','serkangul@mail.com',1,'Kk1klmnop1'),
 ('54321098765','esra', 'sahin','K','1983-04-12','5432167812','esrasahin@mail.com',1,'Ll2lmnopq2'),
 ('67890123456','murat', 'ozdemir','E','1989-08-14','5432167012','muratozdemir@mail.com',1,'Mm3mnopqr3'),
