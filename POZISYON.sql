@@ -1,6 +1,7 @@
 USE BILETSATIS
 
-INSERT INTO POZISYON (PozisyonAd) 
+INSERT INTO  POZISYON
+(PozisyonAd)
 VALUES
 ('sofor'),
 ('muavin'),
