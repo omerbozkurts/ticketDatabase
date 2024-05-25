@@ -44,17 +44,14 @@ FROM BILET B
 	INNER JOIN YOLCU Y ON B.Yolcu = Y.YolcuId
 	INNER JOIN FIRMA F ON B.Firma = F.FirmaId
 	INNER JOIN SEFER S ON B.Sefer = S.SeferId
-	INNER JOIN DURAKLAR BD ON BD.DurakId = B.BinisDurak
-	INNER JOIN DURAKLAR ID ON ID.DurakId = B.InisDurak
+	INNER JOIN UGRANILAN_DURAK_SEFER BD ON BD.DurakId = B.BinisDurak
+	INNER JOIN UGRANILAN_DURAK_SEFER ID ON ID.DurakId = B.InisDurak
 
 WHERE 
   F.FirmaAd = 'Pamukkale Seyahat' AND
   MONTH(S.KalkisTarih) = MONTH(GETDATE()) AND
-  ((BD.DurakIlId = '06' AND ID.DurakIlId = '34') OR
-   (BD.DurakIlId = '35' AND ID.DurakIlId = '34'))
+  ((BD.DurakIl = '06' AND ID.DurakIl = '34') OR
+   (BD.DurakIl = '35' AND ID.DurakIl = '34'))
 ORDER BY
   Y.TCNo
-
-
-
 
