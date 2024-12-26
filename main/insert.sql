@@ -1712,17 +1712,10 @@ VALUES
 ('2024-05-06','2024-05-06',1,5,5,'08:00',15,'12:00',1,'bolu'),
 ('2024-05-29','2024-05-01',6,12,6,'22:00',16,'07:30',2,'eskisehir')
 
-INSERT INTO UGRANILAN_DURAK_SEFER (DurakIsim, DurakSira, DurakId, DurakIl, DurakIlce, SeferDurak)
+/*INSERT INTO UGRANILAN_DURAK_SEFER (DurakIsim, DurakSira, DurakId, DurakIl, DurakIlce, SeferDurak)
 VALUES
-('istanbul 431',1,1,'34',431,1),
-('istanbul 432',2,2,'34',432,1),
-('istanbul 433',3,3,'34',433,1),
-('istanbul 434',4,4,'34',434,1),
-('istanbul 435',5,6,'34',435,1),
-('ankara 58',6,11,'06',58,1),
-('ankara 59',7,12,'06',59,1),
-('ankara 60',8,13,'06',60,1),
-('ankara 61',9,14,'06',61,1)
+*/
+
 
 INSERT INTO SEFER_PERSONEL (PersonelId, Sefer)
 VALUES
@@ -1731,7 +1724,7 @@ VALUES
 (3,4),
 (4,3)
 
-INSERT INTO BILET (Ucret, KesilmeTarih, KoltukNo, CheckInDurum, CheckInDate, Firma, Sube, BiletKesen, Yolcu, Guzergah, Sefer, BinisDurak, InisDurak, Arac)
+/*INSERT INTO BILET (Ucret, KesilmeTarih, KoltukNo, CheckInDurum, CheckInDate, Firma, Sube, BiletKesen, Yolcu, Guzergah, Sefer, BinisDurak, InisDurak, Arac)
 VALUES
 (1200,'2024-05-14',14,NULL,NULL,1,6,1,2,1,1,1,5,1),
 (1200,'2024-05-14',1,NULL,NULL,1,6,1,3,1,2,2,5,1),
@@ -1939,3 +1932,5 @@ VALUES
 (1226,'2024-05-14',202,NULL,NULL,3,6,1,28,2,128,20,9,1),
 (1227,'2024-05-14',203,NULL,NULL,1,6,1,29,3,129,21,10,1),
 (1228,'2024-05-14',204,NULL,NULL,2,6,1,30,4,130,22,1,1)
+
+*/

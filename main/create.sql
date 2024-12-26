@@ -173,7 +173,7 @@ GO
 
 	CREATE TABLE FIRMA_ARAC(
 		FirmaAracId INT IDENTITY(1,1) PRIMARY KEY,
-		AracBenzersizNo VARCHAR(10) CONSTRAINT uniqueFirmaAracNo UNIQUE 
+		AracBenzersizNo VARCHAR(15) CONSTRAINT uniqueFirmaAracNo UNIQUE 
 									  CONSTRAINT notNullFirmaAracNo NOT NULL,
 		AlisKm INT NOT NULL,
 		GuncelKm INT NOT NULL,
@@ -211,7 +211,7 @@ GO
 
 	CREATE TABLE UGRANILAN_DURAK_GUZERGAH(
 		UgranilanDurakId INT IDENTITY(1,1) PRIMARY KEY,
-		DurakIsim VARCHAR(20) NOT NULL,
+		DurakIsim VARCHAR(50) NOT NULL,
 		DurakSira INT NOT NULL,
 		DurakId INT FOREIGN KEY REFERENCES DURAKLAR(DurakId)
 								CONSTRAINT notNullUgranilanDurak NOT NULL,
@@ -248,14 +248,9 @@ GO
 
 	CREATE TABLE UGRANILAN_DURAK_SEFER(
 		UgranilanDurakId INT IDENTITY(1,1) PRIMARY KEY,
-		DurakIsim VARCHAR(20) NOT NULL,
 		DurakSira INT NOT NULL,
-		DurakId INT FOREIGN KEY REFERENCES DURAKLAR(DurakId)
+		DurakId INT FOREIGN KEY REFERENCES UGRANILAN_DURAK_GUZERGAH(UgranilanDurakId)
 								CONSTRAINT notNullUgranilanDurak NOT NULL,
-		DurakIl CHAR(2) FOREIGN KEY REFERENCES IL(IlKodu)
-								CONSTRAINT notNullUgranilanDurakIl NOT NULL,
-		DurakIlce INT FOREIGN KEY REFERENCES ILCE(IlceId)
-								CONSTRAINT notNullUgranilanIlce NOT NULL,
 		SeferDurak INT FOREIGN KEY REFERENCES SEFER(SeferId)
 									CONSTRAINT notNullUgranilanSefer NOT NULL
 	)
@@ -276,7 +271,7 @@ GO
 		BiletId INT IDENTITY(1,1) PRIMARY KEY,
 		Ucret MONEY NOT NULL,
 		KesilmeTarih DATE NOT NULL,
-		KoltukNo SMALLINT CONSTRAINT uniqueBiletKoltuk UNIQUE 
+		KoltukNo SMALLINT 
 						  CONSTRAINT notNullBiletKoltuk NOT NULL,
 		CheckInDurum BIT DEFAULT 0, -- 0 ya da bir olur check-in islemi yapildiysa 1 olarak ayarlanir
 		CheckInDate DATE,
