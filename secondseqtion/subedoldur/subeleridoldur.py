@@ -45,6 +45,6 @@ for i in range(1,515):
         counter+=1
 
 
-subeler_tablosu.to_excel('subeler_guncel.xlsx',index=False)
+subeler_tablosu.to_excel('subeler_guncel2.xlsx',index=False)
 
 
